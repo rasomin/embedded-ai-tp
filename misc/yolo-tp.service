@@ -1,0 +1,10 @@
+[Unit]
+Description=jetson nano term project
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/jetson/src//main.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
